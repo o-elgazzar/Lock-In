@@ -12,7 +12,7 @@ body {
 }
 
 .nav-text > h2 {
-    font-size: 30px;
+    font-size: 48px;
     padding: 0px 5px 5px 100px;
     margin-bottom: 10px;
 }
@@ -33,6 +33,7 @@ hr {
 }
 
 .option-styling {
+    font-size: 20px;
     background: rgba(0,0,0,0);
     color: white;
     border: none;
@@ -74,16 +75,23 @@ hr {
     transition: background-color .3s ease-in ease-out;
 }
 
-.timer {
+#container {
+    background: rgba(12, 12, 12, 0.15);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;  
+    border: none;
+    border-radius: 90px;
+    padding: 80px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;   
+#display {
+    font-size: 150px;
+    font-weight: bold;
+    margin-bottom: 25px;
 }
 
 .btn-style {
@@ -93,15 +101,17 @@ hr {
     border-radius: 4px;
     box-shadow: rgb(235, 235, 235) 0px 6px 0px;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    height: 30px;
-    color: rgb(0, 0, 0);
+    font-size: 50px;
+    height: 70px;
+    color: rgba(0, 0, 0, 0.486);
     font-weight: 500;
-    width: 90px;
+    width: 180px;
     background-color: white;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-style:active {
-    transform: translateY(10px); 
+    transform: translateY(9px) scale(0.98);
+    box-shadow: rgb(235, 235, 235) 0px 2px 0px;
+    font-weight: bold;
 }

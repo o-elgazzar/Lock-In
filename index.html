@@ -9,14 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Lock In</title>
 </head>
-<body>
 
+<body>
     <!--Navigation Header-->
     <div class="nav-text">
         <h2>Lock In</h2>
         <hr>
     </div>
 
+        <!--Choose Option Buttons-->
         <div class="choose-option">
             <button class="option-styling" timer-type="lock-in">Lock In</button>
             <button class="option-styling" timer-type="short-break">Short Break</button>
@@ -24,20 +25,23 @@
             <button class="option-styling" timer-type="auto-mode">Auto Mode</button>
         </div>
 
-       <div class="timer">
-        <span class="timer-component timer-component--minutes">00</span>
-        <span class="timer-component">:</span>
-        <span class="timer-component timer-component--seconds">00</span>
-       </div>
+        <!--Timer-->
+       <div id="container">
+            <div id="display">
+                    25:00
+            </div>
 
-       <div class="buttons">
-        <button type="button" class="btn-style">START</button>
-        <button type="button" class="btn-style">PAUSE</button>
-        <button type="button" class="btn-style">RESET</button>
+            <div id="button-controls">
+                <button type="start" class="btn-style" onclick="start()">START</button> 
+                <button type="pause" class="btn-style" onclick="pause()">PAUSE</button> 
+                <button type="reset" class="btn-style" onclick="reset()">RESET</button>
+            </div>
+
        </div>
 
     <!--Scripts-->
-    <script type="text/javascript" src="scripts.js" defer></script>
+    <script type="text/javascript" src="main.js" defer></script>
 
 </body>
+
 </html>
