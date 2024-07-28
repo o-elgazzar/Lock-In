@@ -17,15 +17,24 @@
         <hr>
     </div>
 
-    <div class="alarm-container">
         <div class="choose-option">
             <button class="option-styling" timer-type="lock-in">Lock In</button>
             <button class="option-styling" timer-type="short-break">Short Break</button>
             <button class="option-styling" timer-type="long-break">Long Break</button>
             <button class="option-styling" timer-type="auto-mode">Auto Mode</button>
         </div>
-    </div>
 
+       <div class="timer">
+        <span class="timer-component timer-component--minutes">00</span>
+        <span class="timer-component">:</span>
+        <span class="timer-component timer-component--seconds">00</span>
+       </div>
+
+       <div class="buttons">
+        <button type="button" class="btn-style">START</button>
+        <button type="button" class="btn-style">PAUSE</button>
+        <button type="button" class="btn-style">RESET</button>
+       </div>
 
     <!--Scripts-->
     <script type="text/javascript" src="scripts.js" defer></script>

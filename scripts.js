@@ -1,5 +1,9 @@
 const body = document.querySelector("body");
 
+window.onload = function() {
+    document.querySelector('.option-styling').click();
+};
+
 document.querySelectorAll('.option-styling').forEach(button => {
     button.addEventListener('click', function() {
 
@@ -15,10 +19,10 @@ document.querySelectorAll('.option-styling').forEach(button => {
                 body.classList.add("blue");
                 break;
             case "long-break":
-                body.classList.add("green");
+                body.classList.add("dark-blue");
                 break;
             case "auto-mode":
-                body.classList.add("purple");
+                body.classList.add("dark-purple");
                 break;
         }
 
